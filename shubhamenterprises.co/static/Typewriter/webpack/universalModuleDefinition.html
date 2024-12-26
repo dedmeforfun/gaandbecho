@@ -1,0 +1,11 @@
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("react"));
+	else if(typeof define === 'function' && define.amd)
+		define("Typewriter", ["react"], factory);
+	else if(typeof exports === 'object')
+		exports["Typewriter"] = factory(require("react"));
+	else
+		root["Typewriter"] = factory(root["react"]);
+})(typeof self !== 'undefined' ? self : this, (__WEBPACK_EXTERNAL_MODULE__8156__) => {
+return 
